@@ -1,6 +1,6 @@
 //
-//  thirtydaysTests.m
-//  thirtydaysTests
+//  thirtydays_tvOSTests.m
+//  thirtydays-tvOSTests
 //
 //  Created by 申得普 on 2019/12/10.
 //  Copyright © 2019 Facebook. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface thirtydaysTests : XCTestCase
+@interface thirtydays_tvOSTests : XCTestCase
 
 @end
 
-@implementation thirtydaysTests
+@implementation thirtydays_tvOSTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

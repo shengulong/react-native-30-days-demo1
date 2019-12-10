@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
+               BlueprintIdentifier = "3F7CADEF239FDCFD00DB537D"
                BuildableName = "thirtydays-tvOS.app"
                BlueprintName = "thirtydays-tvOS"
                ReferencedContainer = "container:thirtydays.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
+               BlueprintIdentifier = "3F7CAE06239FDD0000DB537D"
                BuildableName = "thirtydays-tvOSTests.xctest"
                BlueprintName = "thirtydays-tvOSTests"
                ReferencedContainer = "container:thirtydays.xcodeproj">
@@ -55,29 +55,37 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "thirtydays-tvOSTests.xctest"
-               BlueprintName = "thirtydays-tvOSTests"
-               ReferencedContainer = "container:thirtydays.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
+            BlueprintIdentifier = "3F7CADEF239FDCFD00DB537D"
             BuildableName = "thirtydays-tvOS.app"
             BlueprintName = "thirtydays-tvOS"
             ReferencedContainer = "container:thirtydays.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3F7CAE06239FDD0000DB537D"
+               BuildableName = "thirtydays-tvOSTests.xctest"
+               BlueprintName = "thirtydays-tvOSTests"
+               ReferencedContainer = "container:thirtydays.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3F7CAE11239FDD0000DB537D"
+               BuildableName = "thirtydays-tvOSUITests.xctest"
+               BlueprintName = "thirtydays-tvOSUITests"
+               ReferencedContainer = "container:thirtydays.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -93,14 +101,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
+            BlueprintIdentifier = "3F7CADEF239FDCFD00DB537D"
             BuildableName = "thirtydays-tvOS.app"
             BlueprintName = "thirtydays-tvOS"
             ReferencedContainer = "container:thirtydays.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -112,7 +118,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
+            BlueprintIdentifier = "3F7CADEF239FDCFD00DB537D"
             BuildableName = "thirtydays-tvOS.app"
             BlueprintName = "thirtydays-tvOS"
             ReferencedContainer = "container:thirtydays.xcodeproj">
