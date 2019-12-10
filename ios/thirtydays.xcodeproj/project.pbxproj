@@ -10,14 +10,40 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1F04FC7163F12F782C7EB448 /* libPods-thirtydaysTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D932691605A963E42D1EC12D /* libPods-thirtydaysTests.a */; };
+		3F7CADE5239FDCDB00DB537D /* thirtydaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CADE4239FDCDB00DB537D /* thirtydaysTests.m */; };
+		3F7CADF4239FDCFD00DB537D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CADF3239FDCFD00DB537D /* AppDelegate.m */; };
+		3F7CADF7239FDCFD00DB537D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CADF6239FDCFD00DB537D /* ViewController.m */; };
+		3F7CADFA239FDCFD00DB537D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CADF8239FDCFD00DB537D /* Main.storyboard */; };
+		3F7CADFC239FDD0000DB537D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CADFB239FDD0000DB537D /* Assets.xcassets */; };
+		3F7CADFF239FDD0000DB537D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7CADFD239FDD0000DB537D /* LaunchScreen.storyboard */; };
+		3F7CAE02239FDD0000DB537D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CAE01239FDD0000DB537D /* main.m */; };
+		3F7CAE0C239FDD0000DB537D /* thirtydays_tvOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7CAE0B239FDD0000DB537D /* thirtydays_tvOSTests.m */; };
 		3F9F59072397E75500A6B46A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		63C2514FD7BBBD8824348762 /* libPods-thirtydays.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 593651D3A036EA5FA5283103 /* libPods-thirtydays.a */; };
+		DCA383BD945978372A05AD34 /* libPods-thirtydays-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B750EE61DDCD734F630CB9 /* libPods-thirtydays-tvOS.a */; };
+		EDAC1D7769688DD38DD62746 /* libPods-thirtydays-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 247169297610B01520CD32A4 /* libPods-thirtydays-tvOSTests.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F7CADE7239FDCDB00DB537D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = thirtydays;
+		};
+		3F7CAE08239FDD0000DB537D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F7CADEF239FDCFD00DB537D;
+			remoteInfo = "thirtydays-tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* thirtydaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thirtydaysTests.m; sourceTree = "<group>"; };
 		120097622BB879F5A633381D /* Pods-thirtydaysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thirtydaysTests.release.xcconfig"; path = "Target Support Files/Pods-thirtydaysTests/Pods-thirtydaysTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* thirtydays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thirtydays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = thirtydays/AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +54,22 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = thirtydays/main.m; sourceTree = "<group>"; };
 		247169297610B01520CD32A4 /* libPods-thirtydays-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-thirtydays-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FCDDC0C6BB4AB5A341B35E /* Pods-thirtydaysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thirtydaysTests.debug.xcconfig"; path = "Target Support Files/Pods-thirtydaysTests/Pods-thirtydaysTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F7CADE2239FDCDB00DB537D /* thirtydaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thirtydaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7CADE4239FDCDB00DB537D /* thirtydaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thirtydaysTests.m; sourceTree = "<group>"; };
+		3F7CADE6239FDCDB00DB537D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7CADF0239FDCFD00DB537D /* thirtydays-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "thirtydays-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7CADF2239FDCFD00DB537D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F7CADF3239FDCFD00DB537D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F7CADF5239FDCFD00DB537D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F7CADF6239FDCFD00DB537D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F7CADF9239FDCFD00DB537D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F7CADFB239FDD0000DB537D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F7CADFE239FDD0000DB537D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F7CAE00239FDD0000DB537D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7CAE01239FDD0000DB537D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F7CAE07239FDD0000DB537D /* thirtydays-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "thirtydays-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7CAE0B239FDD0000DB537D /* thirtydays_tvOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thirtydays_tvOSTests.m; sourceTree = "<group>"; };
+		3F7CAE0D239FDD0000DB537D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		593651D3A036EA5FA5283103 /* libPods-thirtydays.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-thirtydays.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A59BAA9BFAC3EB4A05547FC /* Pods-thirtydays-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thirtydays-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-thirtydays-tvOSTests/Pods-thirtydays-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		7965980AEF16F1F7339F3CFF /* Pods-thirtydays-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thirtydays-tvOS.release.xcconfig"; path = "Target Support Files/Pods-thirtydays-tvOS/Pods-thirtydays-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,26 +92,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F7CADDF239FDCDB00DB537D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F04FC7163F12F782C7EB448 /* libPods-thirtydaysTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CADED239FDCFD00DB537D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA383BD945978372A05AD34 /* libPods-thirtydays-tvOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CAE04239FDD0000DB537D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDAC1D7769688DD38DD62746 /* libPods-thirtydays-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* thirtydaysTests */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F21AD99517003FC87E /* thirtydaysTests.m */,
-				00E356F01AD99517003FC87E /* Supporting Files */,
-			);
-			path = thirtydaysTests;
-			sourceTree = "<group>";
-		};
-		00E356F01AD99517003FC87E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F11AD99517003FC87E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* thirtydays */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +146,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3F7CADE3239FDCDB00DB537D /* thirtydaysTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F7CADE4239FDCDB00DB537D /* thirtydaysTests.m */,
+				3F7CADE6239FDCDB00DB537D /* Info.plist */,
+			);
+			path = thirtydaysTests;
+			sourceTree = "<group>";
+		};
+		3F7CADF1239FDCFD00DB537D /* thirtydays-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3F7CADF2239FDCFD00DB537D /* AppDelegate.h */,
+				3F7CADF3239FDCFD00DB537D /* AppDelegate.m */,
+				3F7CADF5239FDCFD00DB537D /* ViewController.h */,
+				3F7CADF6239FDCFD00DB537D /* ViewController.m */,
+				3F7CADF8239FDCFD00DB537D /* Main.storyboard */,
+				3F7CADFB239FDD0000DB537D /* Assets.xcassets */,
+				3F7CADFD239FDD0000DB537D /* LaunchScreen.storyboard */,
+				3F7CAE00239FDD0000DB537D /* Info.plist */,
+				3F7CAE01239FDD0000DB537D /* main.m */,
+			);
+			path = "thirtydays-tvOS";
+			sourceTree = "<group>";
+		};
+		3F7CAE0A239FDD0000DB537D /* thirtydays-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F7CAE0B239FDD0000DB537D /* thirtydays_tvOSTests.m */,
+				3F7CAE0D239FDD0000DB537D /* Info.plist */,
+			);
+			path = "thirtydays-tvOSTests";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,7 +192,9 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* thirtydays */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* thirtydaysTests */,
+				3F7CADE3239FDCDB00DB537D /* thirtydaysTests */,
+				3F7CADF1239FDCFD00DB537D /* thirtydays-tvOS */,
+				3F7CAE0A239FDD0000DB537D /* thirtydays-tvOSTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				B432A0A7EC593D9149ED0185 /* Pods */,
@@ -123,6 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* thirtydays.app */,
+				3F7CADE2239FDCDB00DB537D /* thirtydaysTests.xctest */,
+				3F7CADF0239FDCFD00DB537D /* thirtydays-tvOS.app */,
+				3F7CAE07239FDD0000DB537D /* thirtydays-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +254,62 @@
 			productReference = 13B07F961A680F5B00A75B9A /* thirtydays.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3F7CADE1239FDCDB00DB537D /* thirtydaysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7CADEB239FDCDB00DB537D /* Build configuration list for PBXNativeTarget "thirtydaysTests" */;
+			buildPhases = (
+				45FA1EE1FF8919E6F1C12F44 /* [CP] Check Pods Manifest.lock */,
+				3F7CADDE239FDCDB00DB537D /* Sources */,
+				3F7CADDF239FDCDB00DB537D /* Frameworks */,
+				3F7CADE0239FDCDB00DB537D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F7CADE8239FDCDB00DB537D /* PBXTargetDependency */,
+			);
+			name = thirtydaysTests;
+			productName = thirtydaysTests;
+			productReference = 3F7CADE2239FDCDB00DB537D /* thirtydaysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F7CADEF239FDCFD00DB537D /* thirtydays-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7CAE19239FDD0000DB537D /* Build configuration list for PBXNativeTarget "thirtydays-tvOS" */;
+			buildPhases = (
+				E7A962C465167CCE383914A2 /* [CP] Check Pods Manifest.lock */,
+				3F7CADEC239FDCFD00DB537D /* Sources */,
+				3F7CADED239FDCFD00DB537D /* Frameworks */,
+				3F7CADEE239FDCFD00DB537D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "thirtydays-tvOS";
+			productName = "thirtydays-tvOS";
+			productReference = 3F7CADF0239FDCFD00DB537D /* thirtydays-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F7CAE06239FDD0000DB537D /* thirtydays-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F7CAE1C239FDD0000DB537D /* Build configuration list for PBXNativeTarget "thirtydays-tvOSTests" */;
+			buildPhases = (
+				4B74A7AE40A4572BA30E5A6A /* [CP] Check Pods Manifest.lock */,
+				3F7CAE03239FDD0000DB537D /* Sources */,
+				3F7CAE04239FDD0000DB537D /* Frameworks */,
+				3F7CAE05239FDD0000DB537D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F7CAE09239FDD0000DB537D /* PBXTargetDependency */,
+			);
+			name = "thirtydays-tvOSTests";
+			productName = "thirtydays-tvOSTests";
+			productReference = 3F7CAE07239FDD0000DB537D /* thirtydays-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,6 +318,25 @@
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					3F7CADE1239FDCDB00DB537D = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = 9D88Z4B34Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					3F7CADEF239FDCFD00DB537D = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = 9D88Z4B34Z;
+						ProvisioningStyle = Automatic;
+					};
+					3F7CAE06239FDD0000DB537D = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = 9D88Z4B34Z;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F7CADEF239FDCFD00DB537D;
+					};
+				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "thirtydays" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -189,6 +352,9 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* thirtydays */,
+				3F7CADE1239FDCDB00DB537D /* thirtydaysTests */,
+				3F7CADEF239FDCFD00DB537D /* thirtydays-tvOS */,
+				3F7CAE06239FDD0000DB537D /* thirtydays-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +366,30 @@
 			files = (
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				3F9F59072397E75500A6B46A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CADE0239FDCDB00DB537D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CADEE239FDCFD00DB537D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7CADFF239FDD0000DB537D /* LaunchScreen.storyboard in Resources */,
+				3F7CADFC239FDD0000DB537D /* Assets.xcassets in Resources */,
+				3F7CADFA239FDCFD00DB537D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CAE05239FDD0000DB537D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +426,50 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-thirtydays-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45FA1EE1FF8919E6F1C12F44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thirtydaysTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B74A7AE40A4572BA30E5A6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thirtydays-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -290,6 +524,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-thirtydays/Pods-thirtydays-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E7A962C465167CCE383914A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thirtydays-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,7 +577,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F7CADDE239FDCDB00DB537D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7CADE5239FDCDB00DB537D /* thirtydaysTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CADEC239FDCFD00DB537D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7CADF7239FDCFD00DB537D /* ViewController.m in Sources */,
+				3F7CAE02239FDD0000DB537D /* main.m in Sources */,
+				3F7CADF4239FDCFD00DB537D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F7CAE03239FDD0000DB537D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7CAE0C239FDD0000DB537D /* thirtydays_tvOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F7CADE8239FDCDB00DB537D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* thirtydays */;
+			targetProxy = 3F7CADE7239FDCDB00DB537D /* PBXContainerItemProxy */;
+		};
+		3F7CAE09239FDD0000DB537D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F7CADEF239FDCFD00DB537D /* thirtydays-tvOS */;
+			targetProxy = 3F7CAE08239FDD0000DB537D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
@@ -331,6 +626,22 @@
 			);
 			name = LaunchScreen.xib;
 			path = thirtydays;
+			sourceTree = "<group>";
+		};
+		3F7CADF8239FDCFD00DB537D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F7CADF9239FDCFD00DB537D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F7CADFD239FDD0000DB537D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F7CADFE239FDD0000DB537D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -376,6 +687,170 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = thirtydays;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		3F7CADE9239FDCDB00DB537D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33FCDDC0C6BB4AB5A341B35E /* Pods-thirtydaysTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9D88Z4B34Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = thirtydaysTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = test.thirtydaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thirtydays.app/thirtydays";
+			};
+			name = Debug;
+		};
+		3F7CADEA239FDCDB00DB537D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120097622BB879F5A633381D /* Pods-thirtydaysTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9D88Z4B34Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = thirtydaysTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = test.thirtydaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thirtydays.app/thirtydays";
+			};
+			name = Release;
+		};
+		3F7CAE1A239FDD0000DB537D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23F9B7687187E88B9EACBCA /* Pods-thirtydays-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9D88Z4B34Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "thirtydays-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.thirtydays-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Debug;
+		};
+		3F7CAE1B239FDD0000DB537D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7965980AEF16F1F7339F3CFF /* Pods-thirtydays-tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9D88Z4B34Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "thirtydays-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.thirtydays-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Release;
+		};
+		3F7CAE1D239FDD0000DB537D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D86E220B6CD7EEE2AEB6A9FC /* Pods-thirtydays-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9D88Z4B34Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "thirtydays-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.thirtydays-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thirtydays-tvOS.app/thirtydays-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Debug;
+		};
+		3F7CAE1E239FDD0000DB537D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A59BAA9BFAC3EB4A05547FC /* Pods-thirtydays-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9D88Z4B34Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "thirtydays-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.thirtydays-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thirtydays-tvOS.app/thirtydays-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 13.2;
 			};
 			name = Release;
 		};
@@ -489,6 +964,33 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7CADEB239FDCDB00DB537D /* Build configuration list for PBXNativeTarget "thirtydaysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7CADE9239FDCDB00DB537D /* Debug */,
+				3F7CADEA239FDCDB00DB537D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7CAE19239FDD0000DB537D /* Build configuration list for PBXNativeTarget "thirtydays-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7CAE1A239FDD0000DB537D /* Debug */,
+				3F7CAE1B239FDD0000DB537D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F7CAE1C239FDD0000DB537D /* Build configuration list for PBXNativeTarget "thirtydays-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7CAE1D239FDD0000DB537D /* Debug */,
+				3F7CAE1E239FDD0000DB537D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
