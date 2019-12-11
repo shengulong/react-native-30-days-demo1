@@ -23,7 +23,7 @@ import Swiper from 'react-native-swiper';
 import Util from './view/utils';
 import Day1 from './view/day1';
 import Day2 from './view/day2';
-import Day3 from './view/day1';
+import Day3 from './view/day3';
 import Day4 from './view/day1';
 import Day5 from './view/day1';
 import Day6 from './view/day1';
@@ -86,7 +86,7 @@ class App extends Component {
         {
           key: 2,
           title: 'twitter',
-          component: Day3,
+          component: 'Day3',
           isFA: false,
           icon: 'logo-twitter',
           size: 50,
@@ -563,6 +563,7 @@ const AppNavigator = createStackNavigator(
     Home: App,
     Day1: Day1,
     Day2: Day2,
+    Day3: Day3,
   },
   {
     initialRouteName: 'Home',
