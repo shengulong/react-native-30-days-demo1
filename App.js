@@ -22,7 +22,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import Swiper from 'react-native-swiper';
 import Util from './view/utils';
 import Day1 from './view/day1';
-import Day2 from './view/day1';
+import Day2 from './view/day2';
 import Day3 from './view/day1';
 import Day4 from './view/day1';
 import Day5 from './view/day1';
@@ -562,6 +562,7 @@ const AppNavigator = createStackNavigator(
   {
     Home: App,
     Day1: Day1,
+    Day2: Day2,
   },
   {
     initialRouteName: 'Home',
