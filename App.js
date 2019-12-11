@@ -52,8 +52,13 @@ import Day28 from './view/day1';
 import Day29 from './view/day1';
 import Day30 from './view/day1';
 import IconFA from 'react-native-vector-icons/FontAwesome';
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
 class App extends Component {
+  static navigationOptions = {
+    title: '主页',
+  };
   constructor() {
     super();
     this.state = {
@@ -61,7 +66,7 @@ class App extends Component {
         {
           key: 0,
           title: 'A stopwatch',
-          component: Day1,
+          component: 'Day1',
           isFA: false,
           icon: 'ios-stopwatch',
           size: 48,
@@ -71,7 +76,7 @@ class App extends Component {
         {
           key: 1,
           title: 'A weather app',
-          component: Day2,
+          component: 'Day2',
           isFA: false,
           icon: 'ios-partly-sunny',
           size: 60,
@@ -362,14 +367,16 @@ class App extends Component {
     };
   }
   _jumpToDay(index) {
-    this.props.navigator.push({
-      title: this.state.days[index].title,
-      index: index + 1,
-      display: !this.state.days[index].hideNav,
-      component: this.state.days[index].component,
-    });
+    this.props.navigation.navigate(this.state.days[index].component);
+    // this.props.navigator.push({
+    //   title: this.state.days[index].title,
+    //   index: index + 1,
+    //   display: !this.state.days[index].hideNav,
+    //   component: this.state.days[index].component,
+    // });
   }
   render() {
+    let onThis = this;
     let boxs = this.state.days.map(function(elem, index) {
       return (
         <TouchableHighlight
@@ -379,7 +386,7 @@ class App extends Component {
             index % 3 === 2 ? styles.touchBox2 : styles.touchBox1,
           ]}
           underlayColor="#eee"
-          onPress={() => this._jumpToDay(index)}>
+          onPress={() => onThis._jumpToDay(index)}>
           <View style={styles.boxContainer}>
             <Text style={styles.boxText}>Day{index + 1}</Text>
             {elem.isFA ? (
@@ -551,4 +558,15 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+const AppNavigator = createStackNavigator(
+  {
+    Home: App,
+    Day1: Day1,
+  },
+  {
+    initialRouteName: 'Home',
+  },
+);
+
+export default createAppContainer(AppNavigator);
+// export default App;

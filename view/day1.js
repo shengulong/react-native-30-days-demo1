@@ -7,7 +7,7 @@
 import React, {Component} from 'react';
 import {
   Platform,
-  ListView,
+  FlatList,
   StyleSheet,
   StatusBar,
   Text,
@@ -118,20 +118,21 @@ class WatchRecord extends Component {
   };
 
   render() {
-    let ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2}),
-      theDataSource = ds.cloneWithRows(this.props.record);
     return (
-      <ListView
+      <FlatList
+        // FlatList警告key问题的解决办法
+        keyExtractor={(item, index) => index.toString()}
         style={styles.recordList}
-        dataSource={theDataSource}
-        renderRow={rowData => (
-          <View style={styles.recordItem}>
-            <Text style={styles.recordItemTitle}>{rowData.title}</Text>
+        data={this.props.record}
+        renderItem={rowData => (
+          <View style={styles.recordItem} key={3}>
+            <Text style={styles.recordItemTitle}>{rowData.item.title}</Text>
             <View
               style={{
                 alignItems: 'center',
               }}>
-              <Text style={styles.recordItemTime}>{rowData.time}</Text>
+              {/* 注意这里的写法{rowData.item.time}，不要错误写成{rowData.time} */}
+              <Text style={styles.recordItemTime}>{rowData.item.time}</Text>
             </View>
           </View>
         )}
@@ -141,6 +142,9 @@ class WatchRecord extends Component {
 }
 
 export default class extends Component {
+  static navigationOptions = {
+    title: '第一天',
+  };
   constructor() {
     super();
     this.state = {
