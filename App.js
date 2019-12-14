@@ -43,7 +43,7 @@ import Day18 from './view/day18';
 import Day19 from './view/day1';
 import Day20 from './view/day1';
 import Day21 from './view/day1';
-import Day22 from './view/day1';
+import Day22 from './view/day22';
 import Day23 from './view/day1';
 import Day24 from './view/day1';
 import Day25 from './view/day1';
@@ -51,7 +51,7 @@ import Day26 from './view/day1';
 import Day27 from './view/day1';
 import Day28 from './view/day1';
 import Day29 from './view/day1';
-import Day30 from './view/day1';
+import Day30 from './view/day30';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
@@ -277,7 +277,7 @@ class App extends Component {
         {
           key: 21,
           title: 'Google Now',
-          component: Day22,
+          component: 'Day22',
           isFA: false,
           icon: 'ios-mic',
           size: 50,
@@ -357,7 +357,7 @@ class App extends Component {
         {
           key: 29,
           title: 'Push Notifications',
-          component: Day30,
+          component: 'Day30',
           isFA: false,
           icon: 'md-notifications',
           size: 50,
@@ -567,6 +567,8 @@ const AppNavigator = createStackNavigator(
     Day3: Day3,
     Day7: Day7,
     Day18: Day18,
+    Day30: Day30,
+    Day22: Day22,
   },
   {
     initialRouteName: 'Home',
