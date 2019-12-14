@@ -35,7 +35,7 @@ import Day10 from './view/day1';
 import Day11 from './view/day1';
 import Day12 from './view/day1';
 import Day13 from './view/day1';
-import Day14 from './view/day1';
+import Day14 from './view/day14';
 import Day15 from './view/day1';
 import Day16 from './view/day16';
 import Day17 from './view/day17';
@@ -51,7 +51,7 @@ import Day26 from './view/day1';
 import Day27 from './view/day1';
 import Day28 from './view/day1';
 import Day29 from './view/day1';
-import Day30 from './view/day30';
+import Day30 from './view/day1';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
@@ -197,7 +197,7 @@ class App extends Component {
         {
           key: 13,
           title: 'tinder',
-          component: Day14,
+          component: 'Day14',
           isFA: true,
           icon: 'fire',
           size: 50,
@@ -566,6 +566,7 @@ const AppNavigator = createStackNavigator(
     Day2: Day2,
     Day3: Day3,
     Day7: Day7,
+    Day14: Day14,
     Day16: Day16,
     Day17: Day17,
     Day18: Day18,
