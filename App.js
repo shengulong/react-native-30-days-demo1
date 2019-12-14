@@ -39,7 +39,7 @@ import Day14 from './view/day1';
 import Day15 from './view/day1';
 import Day16 from './view/day1';
 import Day17 from './view/day1';
-import Day18 from './view/day1';
+import Day18 from './view/day18';
 import Day19 from './view/day1';
 import Day20 from './view/day1';
 import Day21 from './view/day1';
@@ -237,7 +237,7 @@ class App extends Component {
         {
           key: 17,
           title: 'Sortable',
-          component: Day18,
+          component: 'Day18',
           isFA: false,
           icon: 'md-move',
           size: 50,
@@ -566,6 +566,7 @@ const AppNavigator = createStackNavigator(
     Day2: Day2,
     Day3: Day3,
     Day7: Day7,
+    Day18: Day18,
   },
   {
     initialRouteName: 'Home',
