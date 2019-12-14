@@ -24,6 +24,7 @@ import Util from './view/utils';
 import Day1 from './view/day1';
 import Day2 from './view/day2';
 import Day3 from './view/day3';
+// import Day3 from './view/day33';
 import Day4 from './view/day1';
 import Day5 from './view/day1';
 import Day6 from './view/day1';

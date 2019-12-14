@@ -14,9 +14,7 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
-  // TabBarIOS,
   Text,
-  TouchableHighlight,
   TouchableOpacity,
   View,
 } from 'react-native';
@@ -55,7 +53,7 @@ class Entrance extends Component {
     }).start();
     setTimeout(() => {
       this.props.hideThis();
-    }, 500);
+    }, 1000);
   }
 
   render() {
@@ -103,45 +101,48 @@ class TwitterPost extends Component {
             onRefresh={() => this._onRefresh()}
           />
         }>
-        <Image source={require('./img/day3.png')} style={styles.image} />
+        <Image
+          source={require('./img/day3.png')}
+          style={{width: Util.size.width, height: Util.size.height - 140}}
+        />
       </ScrollView>
     );
   }
 }
 
-class TwitterFlow extends Component {
-  render() {
-    return (
-      <View>
-        <View style={styles.nav}>
-          <View style={styles.navLeft}>
-            <Icon
-              name="ios-person-add"
-              size={23}
-              style={{color: '#1b95e0', paddingLeft: 10}}
-            />
-          </View>
-          <View style={styles.navMid}>
-            <Icon name="logo-twitter" size={27} style={{color: '#1b95e0'}} />
-          </View>
-          <View style={styles.navRight}>
-            <Icon
-              name="ios-search"
-              size={23}
-              style={{color: '#1b95e0', width: 30}}
-            />
-            <Icon
-              name="ios-create"
-              size={23}
-              style={{color: '#1b95e0', width: 30, paddingRight: 10}}
-            />
-          </View>
-        </View>
-        <TwitterPost />
-      </View>
-    );
-  }
-}
+// class TwitterFlow extends Component {
+//   render() {
+//     return (
+//       <View>
+//         <View style={styles.nav}>
+//           <View style={styles.navLeft}>
+//             <Icon
+//               name="ios-person-add"
+//               size={23}
+//               style={{color: '#1b95e0', paddingLeft: 10}}
+//             />
+//           </View>
+//           <View style={styles.navMid}>
+//             <Icon name="logo-twitter" size={27} style={{color: '#1b95e0'}} />
+//           </View>
+//           <View style={styles.navRight}>
+//             <Icon
+//               name="ios-search"
+//               size={23}
+//               style={{color: '#1b95e0', width: 30}}
+//             />
+//             <Icon
+//               name="ios-create"
+//               size={23}
+//               style={{color: '#1b95e0', width: 30, paddingRight: 10}}
+//             />
+//           </View>
+//         </View>
+//         <TwitterPost />
+//       </View>
+//     );
+//   }
+// }
 
 // renderTabBar:用于渲染TabBar。添加该属性，需要在引入组件之时加上它的子组件。
 // 系统提供两种方式，DefaultTabBar和ScrollableTabBar。
@@ -149,17 +150,17 @@ class TwitterFlow extends Component {
 // ScrollableTabBar表示所有的tabBar.item的长度将会超过屏幕宽度，但是当滚动屏幕之时可以显示出来。
 // 下面我们自定义它的模式
 class FacebookTabBar extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.tabIcons = [];
   }
 
-  // static propTypes = {
-  //   // 有三个属性是系统传入的,即goToPage、activeTab、tabs
-  //   goToPage: PropTypes.func,
-  //   activeTab: PropTypes.number,
-  //   tabs: PropTypes.array,
-  // };
+  static propTypes = {
+    // 有三个属性是系统传入的,即goToPage、activeTab、tabs
+    goToPage: PropTypes.func,
+    activeTab: PropTypes.number,
+    tabs: PropTypes.array,
+  };
 
   componentDidMount() {
     setTimeout(() => this.props.goToPage(0), 0);
@@ -188,6 +189,7 @@ class FacebookTabBar extends Component {
   render() {
     return (
       <View style={[styles.tabs, this.props.style]}>
+        {/*<View style={styles.tabs}>*/}
         {this.props.tabs.map((tab, i) => {
           return (
             <TouchableOpacity
@@ -230,15 +232,14 @@ class TwitterTab extends Component {
   }
 
   _updateTitle(obj) {
-    // const {i, ref} = obj;
-    const i = obj.i;
+    const {i} = obj;
     let title = '';
     switch (i) {
       case 0:
         title = '主页';
         break;
       case 1:
-        title = '通知s';
+        title = '通知';
         break;
       case 2:
         title = '私信';
@@ -253,65 +254,71 @@ class TwitterTab extends Component {
   }
 
   render() {
-    const iosTabView = (
-      <TabBarIOS barTintColor="#fff" tintColor="#1b95e0">
-        <Icon.TabBarItem
-          title="主页"
-          iconName="ios-home"
-          selectedIconName="ios-home"
-          onPress={() => this.changeTab('主页')}
-          selected={this.state.selectedTab === '主页'}>
-          <TwitterFlow />
-        </Icon.TabBarItem>
-        <Icon.TabBarItem
-          title="通知"
-          iconName="ios-notifications"
-          selectedIconName="ios-notifications"
-          onPress={() => this.changeTab('通知')}
-          selected={this.state.selectedTab === '通知'}>
-          <TwitterFlow />
-        </Icon.TabBarItem>
-        <Icon.TabBarItem
-          title="私信"
-          iconName="ios-mail"
-          selectedIconName="ios-mail"
-          onPress={() => this.changeTab('私信')}
-          selected={this.state.selectedTab === '私信'}>
-          <TwitterFlow />
-        </Icon.TabBarItem>
-        <Icon.TabBarItem
-          title="我"
-          iconName="ios-person"
-          selectedIconName="ios-person"
-          onPress={() => this.changeTab('我')}
-          selected={this.state.selectedTab === '我'}>
-          <TwitterFlow />
-        </Icon.TabBarItem>
-      </TabBarIOS>
-    );
+    // todo 实现ios风格的导航栏
+    // const iosTabView = (
+    //   <TabBarIOS barTintColor="#fff" tintColor="#1b95e0">
+    //     <Icon.TabBarItem
+    //       title="主页"
+    //       iconName="ios-home"
+    //       selectedIconName="ios-home"
+    //       onPress={() => this.changeTab('主页')}
+    //       selected={this.state.selectedTab === '主页'}>
+    //       <TwitterFlow />
+    //     </Icon.TabBarItem>
+    //     <Icon.TabBarItem
+    //       title="通知"
+    //       iconName="ios-notifications"
+    //       selectedIconName="ios-notifications"
+    //       onPress={() => this.changeTab('通知')}
+    //       selected={this.state.selectedTab === '通知'}>
+    //       <TwitterFlow />
+    //     </Icon.TabBarItem>
+    //     <Icon.TabBarItem
+    //       title="私信"
+    //       iconName="ios-mail"
+    //       selectedIconName="ios-mail"
+    //       onPress={() => this.changeTab('私信')}
+    //       selected={this.state.selectedTab === '私信'}>
+    //       <TwitterFlow />
+    //     </Icon.TabBarItem>
+    //     <Icon.TabBarItem
+    //       title="我"
+    //       iconName="ios-person"
+    //       selectedIconName="ios-person"
+    //       onPress={() => this.changeTab('我')}
+    //       selected={this.state.selectedTab === '我'}>
+    //       <TwitterFlow />
+    //     </Icon.TabBarItem>
+    //   </TabBarIOS>
+    // );
     const androidTabView = (
-      <View>
-        <View style={styles.navBg} />
-        <View style={styles.navAndroid}>
-          <View style={styles.logoContainer}>
-            <Icon name="logo-twitter" color="#fff" size={27} />
-            <Text style={styles.title}>{this.state.title}</Text>
-          </View>
-          <View style={styles.iconContainer}>
-            <Icon name="ios-search" color="#fff" size={25} />
-            <Icon name="ios-create" color="#fff" size={25} />
+      <>
+        <View>
+          <View style={styles.navAndroid}>
+            <View style={styles.logoContainer}>
+              <Icon name="logo-twitter" color="#fff" size={27} />
+              <Text style={styles.title}>{this.state.title}</Text>
+            </View>
+            <View style={styles.iconContainer}>
+              <Icon name="ios-search" color="#fff" size={25} />
+              <Icon name="ios-create" color="#fff" size={25} />
+            </View>
           </View>
         </View>
         <ScrollableTabView
-          tabBarPosition={'bottom'}
           onChangeTab={obj => this._updateTitle(obj)}
+          // todo 没有实现导航栏在下面的情况
+          // tabBarPosition={'bottom'}
+          // tabBarPosition={'overlayBottom'}
+          // tabBarPosition={'overlayTop'}
+          tabBarPosition={'top'}
           renderTabBar={() => <FacebookTabBar />}>
           <TwitterPost tabLabel="ios-home" />
           <TwitterPost tabLabel="ios-notifications" />
           <TwitterPost tabLabel="ios-mail" />
           <TwitterPost tabLabel="ios-person" />
         </ScrollableTabView>
-      </View>
+      </>
     );
     return Platform.OS === 'ios' ? androidTabView : androidTabView;
   }
@@ -356,8 +363,10 @@ export default class extends Component {
 }
 
 const styles = StyleSheet.create({
-  itemWrapper: {
-    backgroundColor: '#fff',
+  center: {
+    flex: 1,
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
   twitterContainer: {
     width: Util.size.width,
@@ -403,12 +412,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
   },
-  twitterPostContainer: {
-    width: Util.size.width,
-    height: Util.size.height - 90,
-    position: 'relative',
-    top: -20,
-  },
   navAndroid: {
     backgroundColor: '#3195d7',
     width: Util.size.width,
@@ -423,27 +426,18 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 10,
+    // paddingBottom: 30,
   },
   tabs: {
-    height: 45,
+    height: 50,
     flexDirection: 'row',
-    paddingTop: 5,
-    borderWidth: 1,
-    borderTopWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderBottomColor: 'rgba(0,0,0,0.05)',
-    backgroundColor: '#111',
-  },
-  icon: {
-    position: 'absolute',
-    top: 0,
-    left: 35,
-  },
-  img: {
-    width: 375,
-    height: 550,
+    // paddingTop: 5,
+    // borderWidth: 1,
+    // borderTopWidth: 0,
+    // borderLeftWidth: 0,
+    // borderRightWidth: 0,
+    // borderBottomColor: 'rgba(0,0,0,0.05)',
+    // backgroundColor: '#111',
   },
   title: {
     color: '#fff',
@@ -458,17 +452,5 @@ const styles = StyleSheet.create({
   logoContainer: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
-  },
-  tabView: {
-    flex: 1,
-    height: 500,
-    padding: 10,
-    backgroundColor: 'rgba(0,0,0,0.01)',
-  },
-  image: {
-    width: Util.size.width,
-    height: Util.size.height,
-    flexGrow: 1,
-    alignSelf: 'stretch',
   },
 });

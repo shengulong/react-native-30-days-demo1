@@ -3,8 +3,9 @@
 + react 16.9.0
 
 ## 项目相关
-+ npx react-native init thirtydays
-+ npx react-native run-ios
+
++ 创建项目：`npx react-native init thirtydays`
++ 启动项目：`npx react-native run-ios`
 + ios使用CocoaPods管理依赖
     
       cd ios
