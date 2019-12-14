@@ -5268,6 +5268,13 @@ react-native-gesture-handler@^1.5.2:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-gesture-password@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npm.taobao.org/react-native-gesture-password/download/react-native-gesture-password-0.4.0.tgz#5b39d5e193e3f83099ea3914a805293bd69a87d5"
+  integrity sha1-WznV4ZPj+DCZ6jkUqAUpO9aah9U=
+  dependencies:
+    prop-types "^15.6.0"
+
 react-native-reanimated@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/react-native-reanimated/download/react-native-reanimated-1.4.0.tgz#7f1acbf9be08492d834f512700570978052be2f9"
