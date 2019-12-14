@@ -28,7 +28,7 @@ import Day3 from './view/day3';
 import Day4 from './view/day1';
 import Day5 from './view/day1';
 import Day6 from './view/day1';
-import Day7 from './view/day1';
+import Day7 from './view/day7';
 import Day8 from './view/day1';
 import Day9 from './view/day1';
 import Day10 from './view/day1';
@@ -127,7 +127,7 @@ class App extends Component {
         {
           key: 6,
           title: 'Moveable Circle',
-          component: Day7,
+          component: 'Day7',
           isFA: false,
           icon: 'ios-baseball',
           size: 50,
@@ -565,6 +565,7 @@ const AppNavigator = createStackNavigator(
     Day1: Day1,
     Day2: Day2,
     Day3: Day3,
+    Day7: Day7,
   },
   {
     initialRouteName: 'Home',
