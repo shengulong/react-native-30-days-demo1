@@ -948,6 +948,11 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@react-native-community/viewpager@^2.0.1":
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/@react-native-community/viewpager/download/@react-native-community/viewpager-2.0.2.tgz#622b190294b1310c4825c98daeaee1c8443f7124"
+  integrity sha1-YisZApSxMQxIJcmNrq7hyEQ/cSQ=
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.npm.taobao.org/@react-navigation/core/download/@react-navigation/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"
@@ -1921,7 +1926,7 @@ cosmiconfig@^5.0.5, cosmiconfig@^5.1.0:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
-create-react-class@^15.6.3:
+create-react-class@^15.6.2, create-react-class@^15.6.3:
   version "15.6.3"
   resolved "https://registry.npm.taobao.org/create-react-class/download/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   integrity sha1-LXMjf7P5cK5uvgEanmb0bbyoADY=
@@ -2817,6 +2822,11 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/functional-red-black-tree/download/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+fuzzy@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npm.taobao.org/fuzzy/download/fuzzy-0.1.3.tgz#4c76ec2ff0ac1a36a9dccf9a00df8623078d4ed8"
+  integrity sha1-THbsL/CsGjap3M+aAN+GIweNTtg=
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -5169,7 +5179,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.3"
 
-prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -5284,6 +5294,23 @@ react-native-screens@^2.0.0-alpha.17:
   dependencies:
     debounce "^1.2.0"
 
+react-native-scrollable-tab-view@latest:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/react-native-scrollable-tab-view/download/react-native-scrollable-tab-view-1.0.0.tgz#87319896067f7bb643ecd7fba2cba4d6d8f9e18b"
+  integrity sha1-hzGYlgZ/e7ZD7Nf7osuk1tj54Ys=
+  dependencies:
+    "@react-native-community/viewpager" "^2.0.1"
+    create-react-class "^15.6.2"
+    prop-types "^15.6.0"
+    react-timer-mixin "^0.13.3"
+
+react-native-search-bar@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.npm.taobao.org/react-native-search-bar/download/react-native-search-bar-3.5.1.tgz#b05e12ecbe747e0fa43d19084b06db006f7b8097"
+  integrity sha1-sF4S7L50fg+kPRkISwbbAG97gJc=
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-swiper@^1.5.14:
   version "1.5.14"
   resolved "https://registry.npm.taobao.org/react-native-swiper/download/react-native-swiper-1.5.14.tgz#1c6f949ca377186300f972bb0f30d24062c899aa"
@@ -5364,6 +5391,11 @@ react-test-renderer@16.9.0:
     prop-types "^15.6.2"
     react-is "^16.9.0"
     scheduler "^0.15.0"
+
+react-timer-mixin@^0.13.3:
+  version "0.13.4"
+  resolved "https://registry.npm.taobao.org/react-timer-mixin/download/react-timer-mixin-0.13.4.tgz#75a00c3c94c13abe29b43d63b4c65a88fc8264d3"
+  integrity sha1-daAMPJTBOr4ptD1jtMZaiPyCZNM=
 
 react@16.9.0:
   version "16.9.0"

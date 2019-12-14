@@ -38,7 +38,7 @@ import Day13 from './view/day1';
 import Day14 from './view/day1';
 import Day15 from './view/day1';
 import Day16 from './view/day1';
-import Day17 from './view/day1';
+import Day17 from './view/day17';
 import Day18 from './view/day18';
 import Day19 from './view/day1';
 import Day20 from './view/day1';
@@ -227,7 +227,7 @@ class App extends Component {
         {
           key: 16,
           title: 'Fuzzy search',
-          component: Day17,
+          component: 'Day17',
           isFA: false,
           icon: 'md-search',
           size: 50,
@@ -566,6 +566,7 @@ const AppNavigator = createStackNavigator(
     Day2: Day2,
     Day3: Day3,
     Day7: Day7,
+    Day17: Day17,
     Day18: Day18,
     Day30: Day30,
     Day22: Day22,
