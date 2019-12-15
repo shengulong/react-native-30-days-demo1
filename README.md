@@ -10,6 +10,7 @@
     
       cd ios
       pod install
+      一般执行完pod install后，需要重新执行下命令`npx react-native run-io`
 
 ## 优化点
 + 使用eslint进行格式校验

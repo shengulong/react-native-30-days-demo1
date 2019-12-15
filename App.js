@@ -40,7 +40,7 @@ import Day15 from './view/day1';
 import Day16 from './view/day16';
 import Day17 from './view/day17';
 import Day18 from './view/day18';
-import Day19 from './view/day1';
+import Day19 from './view/day19';
 import Day20 from './view/day1';
 import Day21 from './view/day1';
 import Day22 from './view/day22';
@@ -247,7 +247,7 @@ class App extends Component {
         {
           key: 18,
           title: 'TouchID to unlock',
-          component: Day19,
+          component: 'Day19',
           isFA: false,
           icon: 'ios-log-in',
           size: 50,
@@ -571,6 +571,7 @@ const AppNavigator = createStackNavigator(
     Day16: Day16,
     Day17: Day17,
     Day18: Day18,
+    Day19: Day19,
     Day30: Day30,
     Day22: Day22,
   },
