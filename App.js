@@ -31,7 +31,7 @@ import Day6 from './view/day1';
 import Day7 from './view/day7';
 import Day8 from './view/day1';
 import Day9 from './view/day1';
-import Day10 from './view/day1';
+import Day10 from './view/day10';
 import Day11 from './view/day1';
 import Day12 from './view/day1';
 import Day13 from './view/day1';
@@ -157,7 +157,7 @@ class App extends Component {
         {
           key: 9,
           title: 'Tumblr Menu',
-          component: Day10,
+          component: 'Day10',
           isFA: false,
           icon: 'logo-tumblr',
           size: 50,
@@ -566,6 +566,7 @@ const AppNavigator = createStackNavigator(
     Day2: Day2,
     Day3: Day3,
     Day7: Day7,
+    Day10: Day10,
     Day14: Day14,
     Day16: Day16,
     Day17: Day17,
