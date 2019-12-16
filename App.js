@@ -42,7 +42,7 @@ import Day17 from './view/day17';
 import Day18 from './view/day18';
 import Day19 from './view/day19';
 import Day20 from './view/day20';
-import Day21 from './view/day1';
+import Day21 from './view/day21';
 import Day22 from './view/day22';
 import Day23 from './view/day23';
 import Day24 from './view/day1';
@@ -268,7 +268,7 @@ class App extends Component {
         {
           key: 20,
           title: 'Multi page Reminder',
-          component: Day21,
+          component: 'Day21',
           isFA: false,
           icon: 'ios-paper',
           size: 50,
@@ -574,6 +574,7 @@ const AppNavigator = createStackNavigator(
     Day18: Day18,
     Day19: Day19,
     Day20: Day20,
+    Day21: Day21,
     Day22: Day22,
     Day23: Day23,
     Day30: Day30,

@@ -5,7 +5,7 @@
 ## 项目相关
 
 + 创建项目：`npx react-native init thirtydays`
-+ 启动项目：`npx react-native run-ios`
++ 启动项目：`npx react-native run-ios` `npx react-native run-ios --simulator "iPhone 6"`
 + ios使用CocoaPods管理依赖
     
       当前版本0.61.5引入依赖，基本上就是如下操作即可
