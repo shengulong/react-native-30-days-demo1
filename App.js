@@ -41,7 +41,7 @@ import Day16 from './view/day16';
 import Day17 from './view/day17';
 import Day18 from './view/day18';
 import Day19 from './view/day19';
-import Day20 from './view/day1';
+import Day20 from './view/day20';
 import Day21 from './view/day1';
 import Day22 from './view/day22';
 import Day23 from './view/day23';
@@ -258,7 +258,7 @@ class App extends Component {
         {
           key: 19,
           title: 'Single page Reminder',
-          component: Day20,
+          component: 'Day20',
           isFA: false,
           icon: 'ios-list',
           size: 50,
@@ -573,9 +573,10 @@ const AppNavigator = createStackNavigator(
     Day17: Day17,
     Day18: Day18,
     Day19: Day19,
-    Day30: Day30,
+    Day20: Day20,
     Day22: Day22,
     Day23: Day23,
+    Day30: Day30,
     Sphere: Sphere,
     Poincare: Poincare,
   },
