@@ -26,24 +26,23 @@ export class Poincare extends Component {
         this.setState({
           html: data,
         });
-        console.info(data);
       })
       .catch(error => {
         console.error('fail');
         console.error(error);
       });
     // 各类路径
-    // * RNFS.MainBundlePath
+    // * RNFS.MainBundlePath app的跟目录即thirtydays.app/，可以把静态资源放在其下面
     // * RNFS.CachesDirectoryPath
     // * RNFS.DocumentDirectoryPath
     // * RNFS.TemporaryDirectoryPath
     // * RNFS.LibraryDirectoryPath
     // * RNFS.ExternalDirectoryPath
     // * RNFS.ExternalStorageDirectoryPath
-    console.info(RNFS.MainBundlePath);
-    console.info(RNFS.DocumentDirectoryPath);
-    console.info(RNFS.ExternalDirectoryPath);
-    console.info(RNFS.ExternalStorageDirectoryPath);
+    // console.info(RNFS.MainBundlePath);
+    // console.info(RNFS.DocumentDirectoryPath);
+    // console.info(RNFS.ExternalDirectoryPath);
+    // console.info(RNFS.ExternalStorageDirectoryPath);
   }
 
   render() {
@@ -53,6 +52,7 @@ export class Poincare extends Component {
         // automaticallyAdjustContentInsets={false}
         // source={require('./public/html/demo1.html')}
         source={{html, baseUrl: 'js/'}}
+        // 必须设置下面的选项：Loads static HTML or a URI (with optional headers) in the WebView. Note that static HTML will require setting originWhitelist to ["*"].
         originWhitelist={['*']}
         // javaScriptEnabled={true}
         // domStorageEnabled={true}
@@ -76,7 +76,7 @@ export class Sphere extends Component {
         this.setState({
           html: data,
         });
-        console.info(data);
+        // console.info(data);
       })
       .catch(error => {
         console.error('fail');
@@ -89,6 +89,7 @@ export class Sphere extends Component {
       <WebView
         automaticallyAdjustContentInsets={false}
         // source={require('./public/html/demo2.html')}
+        // 这里的参数key为html(string类型),baseUrl(string类型)
         source={{html, baseUrl: 'js/'}}
         originWhitelist={['*']}
         javaScriptEnabled={true}

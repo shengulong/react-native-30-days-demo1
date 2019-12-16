@@ -8,6 +8,8 @@
 + 启动项目：`npx react-native run-ios`
 + ios使用CocoaPods管理依赖
     
+      当前版本0.61.5引入依赖，基本上就是如下操作即可
+      yarn add dependency_plugin
       cd ios
       pod install
       一般执行完pod install后，需要重新执行下命令`npx react-native run-ios`进行app更新
