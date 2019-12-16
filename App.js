@@ -44,7 +44,7 @@ import Day19 from './view/day19';
 import Day20 from './view/day1';
 import Day21 from './view/day1';
 import Day22 from './view/day22';
-import Day23 from './view/day1';
+import Day23 from './view/day23';
 import Day24 from './view/day1';
 import Day25 from './view/day1';
 import Day26 from './view/day1';
@@ -52,6 +52,7 @@ import Day27 from './view/day1';
 import Day28 from './view/day1';
 import Day29 from './view/day1';
 import Day30 from './view/day1';
+import {Sphere, Poincare} from './view/day23';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
@@ -287,7 +288,7 @@ class App extends Component {
         {
           key: 22,
           title: 'Local WebView',
-          component: Day23,
+          component: 'Day23',
           isFA: true,
           icon: 'safari',
           size: 50,
@@ -574,6 +575,9 @@ const AppNavigator = createStackNavigator(
     Day19: Day19,
     Day30: Day30,
     Day22: Day22,
+    Day23: Day23,
+    Sphere: Sphere,
+    Poincare: Poincare,
   },
   {
     initialRouteName: 'Home',
