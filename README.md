@@ -23,3 +23,6 @@
 ## 遇到问题
 + day23：对WebView里面的的html/js/css内容修改后并不能立即生效，需要更新app。
 把html/js/css统一放到ios的app里面
+
+## 资料
+[图标库](https://oblador.github.io/react-native-vector-icons/)
